@@ -1,0 +1,311 @@
+:root {
+    --primary: rgb(128, 119, 149);
+    --primaryHover: yellow;
+}
+
+nav, footer {
+    color: white;
+    background-color: var(--primary);
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link-hover {
+    color: var(--primaryHover);
+}
+
+.bg-img {
+    min-height: 90vh;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(/frontend/images/background.jpg);
+    background-blend-mode: overlay;
+}
+
+.bg.img.dashboard {
+    min-height: auto;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+
+#loginForm a, #signupForm a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#loginForm a:hover, #signupForm a:hover {
+    text-decoration: underline;
+}
+
+
+/* Pricing Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color:white
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: rgb(75, 75, 98);
+}
+
+/* Optional: enhance toggle layout */
+header .form-switch {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0.5rem;
+  }
+  
+  /* Styling the toggle switch */
+  .form-switch .form-check-input {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .form-switch .form-check-input:checked {
+    background-color: #0d6efd; /* Bootstrap primary */
+  }
+  
+  .form-switch .form-check-input:focus {
+    box-shadow: none;
+  }
+  
+  .form-switch .form-check-input::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-switch .form-check-input:checked::before {
+    transform: translateX(25px);
+  }
+  
+  /* Ensure the switch area aligns well */
+  header .d-flex span {
+    font-weight: 500;
+  }
+  
+
+/* Features page/ Cards */
+.pageFeatures {
+    background-color: rgba(219, 226, 226, 0.813);
+    height: 40vh;
+}
+h1{
+    font-size: 70px;
+    color: var(--primary);
+}
+.pageFeatures:hover{
+    transform: translate(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    font-size: 120px;
+    
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7f679a 0%, #2575fc 50%);
+    box-shadow: 0 10px 20px rgba(100, 100, 255, 0.2);
+    color: white;
+}
+
+.btn:hover {
+    background: white;
+    background-color: black;
+  }
+  .card-features:hover{
+    transform: translate(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    
+}
+.btn-2 {
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    background: black;
+    box-shadow: 0 10px 20px rgba(100, 100, 255, 0.2);
+    color: white;
+}
+
+/* Pricing Cards Container */
+.pricing-cards {
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Wrapper */
+  .card {
+    transition: 0.3s ease;
+    border-radius: 1rem; /* replaces --radius-xl */
+    overflow: hidden;
+    background: #ffffff;
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Card Header */
+  .card-header h2,
+  .card .h5 {
+    font-size: 1.75rem;
+    color: #8f9194; /* Bootstrap primary */
+  }
+  
+  .card .fs-3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #080606;
+  }
+  
+  .card .currency {
+    font-size: 1.2rem;
+    vertical-align: super;
+  }
+  
+  /* Card Content Area */
+  .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Features List */
+  .list-group-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-title {
+    font-weight: 600;
+    color: #eef0f4;
+    margin-bottom: 0.25rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .feature-icon {
+    color: #0d6efd;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list-group-item.featured .feature-icon {
+    color: #ff5722; /* Accent color */
+  }
+  
+  /* Choose Plan Button */
+  .btn.select-plan,
+  .card-body .btn {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 10px 20px rgba(100, 100, 255, 0.2);
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.select-plan:hover {
+    background: linear-gradient(135deg, #5a00b8 0%, #1e60e1 100%);
+  }
+  
+
+/* @keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.slideUp {
+    opacity: 0;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(360deg) scale(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(100%);
+    }
+}
+.rotateIn {
+    opacity: 0;
+    animation-name: rotateIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} */
