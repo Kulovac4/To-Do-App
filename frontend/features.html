@@ -48,105 +48,107 @@
 
 <!-- nav bar above -->
 
-<!-- Page not ready -->
+<!-- features page below-->
 <main>
-<section class="d-flex justify-content-center align-items-center flex-column pageFeatures">
-    <h1 class="text-center mb-5">Understand the To Do App Features</h1>
-    <p style="font-size: 25px;">The To Do APP helps you and your work teams work together by managing your projects from start to finish</p>
-    <a href="/frontend/signup.html" class="btn text-white btn-dark py">Sign up</a>
-</section>
+  <section class="d-flex justify-content-center align-items-center flex-column pageFeatures bg-gradient p-5 text-white rounded shadow-lg">
+    <h1 class="text-center mb-4">✨ Discover To Do App Features</h1>
+    <p class="lead text-center mb-4 text-dark" style="max-width: 700px;">
+      Manage your projects with ease. Collaborate with your team and stay productive from start to finish.
+    </p>
+    <a href="/frontend/signup.html" class="btn btn-primary btn-lg px-4 py-2 shadow">Sign Up Now</a>
+  </section>
 
-<div class="row justify-content-center py-6">
-    <div class="col-lg-3 col-md-6">
-        <div class="p-3 d-flex flex-column justify-content-between border shadow rounded-3">
-            <img height="100px" width="auto" src="/frontend/images/tasks-app-svgrepo-com.svg" alt="Tasks">
-            <div class="card-features">
-                <h3>Tasks</h3>
-                <p class="flex-grow-1">Break down tasks, assign individuals and due dates</p>
-                <a href="/frontend/dashboard.html" class="btn btn-dark ">See Tasks</a>
-            </div>
+  <div class="row justify-content-center py-5">
+    <!-- Feature Card Template -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="/frontend/images/tasks-app-svgrepo-com.svg" alt="Tasks" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">Tasks</h5>
+          <p class="card-text flex-grow-1">Break down tasks, assign individuals and due dates</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-primary mt-3">See Tasks</a>
         </div>
+      </div>
     </div>
 
-        <div class="col-lg-3 col-md-6">
-            <div class="p-3 d-flex flex-column justify-content-between border shadow rounded-3">
-                <img height="100px" width="auto" src="/frontend/images/tasks-tick-svgrepo-com.svg" alt="Tasks">
-                <div class="card-features">
-                    <h3>My Tasks</h3>
-                    <p class="flex-grow-1">Organise tasks and tackle together as a team</p>
-                    <a href="/frontend/dashboard.html" class="btn btn-dark">See Tasks</a>
-                </div>
-            </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="/frontend/images/tasks-tick-svgrepo-com.svg" alt="My Tasks" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">My Tasks</h5>
+          <p class="card-text flex-grow-1">Organise tasks and tackle together as a team</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-success mt-3">See Tasks</a>
         </div>
-    
-        <div class="col-lg-3 col-md-6">
-                <div class="p-3 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="100px" width="auto" src="/frontend/images/team-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>View</h3>
-                        <p class="flex-grow-1" >View yours tasks in a calendar, sort by groups or dates</p>
-                        <a href="/frontend/dashboard.html" class="btn btn-dark">See Tasks</a>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="p-1 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="100px" width="auto" src="/frontend/images/security-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>Security</h3>
-                        <p class="flex-grow-1">Enhanced Security protecting your teams sensetive information</p>
-                        <a href="/frontend/dashboard.html" class="btn btn-dark">Log-In</a>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="/frontend/images/team-svgrepo-com.svg" alt="View" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">View</h5>
+          <p class="card-text flex-grow-1">View your tasks in a calendar, sorted by groups or dates</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-info mt-3">See Tasks</a>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="p-4 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="90px" width="auto" src="images/mail-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>Mail</h3>
-                        <p class="flex-grow-1">Instant updates to your email</p>
-                        <a href="/frontend/images/mail-svgrepo-com.svg" class="btn btn-dark">See Tasks</a>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="/frontend/images/security-svgrepo-com.svg" alt="Security" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">Security</h5>
+          <p class="card-text flex-grow-1">Keep your team’s sensitive information protected</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-danger mt-3">Log In</a>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="p-4 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="90px" width="auto" src="images/create-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>Create</h3>
-                        <p class="flex-grow-1">Create new tasks, share them with your team</p>
-                        <a href="/frontend/images/mail-svgrepo-com.svg" class="btn btn-dark">See Tasks</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Additional Cards -->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="images/mail-svgrepo-com.svg" alt="Mail" height="90" class="mb-3 mx-auto">
+          <h5 class="card-title">Mail</h5>
+          <p class="card-text flex-grow-1">Instant updates sent straight to your inbox</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-warning mt-3">See Tasks</a>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="p-3 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="100px" width="auto" src="images/login-2-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>Sign Up</h3>
-                        <p class="flex-grow-1">Sign up your team or indivudals and get tasking</p>
-                        <a href="/frontend/images/mail-svgrepo-com.svg" class="btn btn-dark">See Tasks</a>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="images/create-svgrepo-com.svg" alt="Create" height="90" class="mb-3 mx-auto">
+          <h5 class="card-title">Create</h5>
+          <p class="card-text flex-grow-1">Easily create new tasks and share them with your team</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-secondary mt-3">See Tasks</a>
+        </div>
+      </div>
+    </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="p-3 d-flex flex-column justify-content-between border shadow rounded-3">
-                    <img height="100px" width="auto" src="images/eye-svgrepo-com.svg" alt="Tasks">
-                    <div class="card-features">
-                        <h3>View</h3>
-                        <p class="flex-grow-1">View tasks in real-time or in calendar format</p>
-                        <a href="/frontend/images/mail-svgrepo-com.svg" class="btn btn-dark">See Tasks</a>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="images/login-2-svgrepo-com.svg" alt="Sign Up" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">Sign Up</h5>
+          <p class="card-text flex-grow-1">Create an account for your team and get started</p>
+          <a href="/frontend/signup.html" class="btn btn-outline-primary mt-3">Get Started</a>
+        </div>
+      </div>
+    </div>
 
-        
-</div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card border-0 shadow-sm h-100 hover-zoom">
+        <div class="card-body d-flex flex-column text-center">
+          <img src="images/eye-svgrepo-com.svg" alt="View" height="100" class="mb-3 mx-auto">
+          <h5 class="card-title">Real-Time View</h5>
+          <p class="card-text flex-grow-1">View tasks in real-time or in calendar format</p>
+          <a href="/frontend/dashboard.html" class="btn btn-outline-info mt-3">See Tasks</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 
@@ -177,14 +179,6 @@
     
 </footer>
 <!-- footer above -->
-
-
-
-
-
-
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
