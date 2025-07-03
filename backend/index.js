@@ -15,7 +15,14 @@ require("dotenv").config(); //allows use of env file
 // ------------------ ↓ MIDDLEWARE SETUP ↓ --------------------
 app.use(express.json()); //uses express in JSON format
 //allow access
-app.use(cors("*"));
+
+const corsOptions = {
+    origin: 'https://tasknest-tau.vercel.app/',
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentias: true
+}
+
+app.use(cors("corsOptions")); //every domain is allowed on this server
 
 // ----------- ↓ DATABASE CONNECTION + APP STARTER ↓ --------------
 // ------------------ ↓ APP STARTUP ↓ --------------------
