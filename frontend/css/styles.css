@@ -21,7 +21,7 @@ nav, footer {
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url(/frontend/images/background.jpg);
+    background-image:url(../images/background.jpg);
     background-blend-mode: overlay;
 }
 
