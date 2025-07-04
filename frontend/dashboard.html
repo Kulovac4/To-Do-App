@@ -52,40 +52,46 @@
 
 <main>
     <div class="bg-img dashboard py-5">
-    <div class="d-flex justify-content-center align-items-center flex-column container px-3 px-md-4 lg-5">
+      <div class="d-flex justify-content-center align-items-center flex-column container px-3 px-md-4 lg-5">
         <div class="rounded shadow bg-white px-3 lg-5 col-12">
-                <form id="taskForm" class="mb-5">
-                <h1 id="greeting" class="mb-5 display-2">Hello</h1>
-                <h2 class="mb-3">New Task</h2>
-                <input id="taskName" type="text" class="mb-2 form-control shadow-sm" placeholder="Task Name">
-                <textarea id="taskDescription" type="text" class="form-control mb-2 shadow-sm" placeholder="Task Description" rows="7"></textarea>
-                <input id="dueDate" type="date" class="mb-3 form-control shadow-sm" placeholder="Due Date">
-                <button type="submit" class="btn btn-dark shadow-sm px-5">Create task</button>
-                </form>
-                <div class-d="flex align-items-center gap-3 mb-5">
-                    <label for="sortSelect">Sort by</label>
-                    <select id="sortSelect" class="form-select w-auto shadow-none">
-                        <option value="default" selected>Default</option>
-                        <option value="dueDate">Due Date</option>
-                        <option value="dateCreated">Date Created</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <h2>To Do</h2>
-                        <ul id="toDoList" class="list-group">
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <h2>Completed</h2>
-                        <ul id="completedList" class="list-group">
-                        </ul>
-                    </div>
-                </div>
-            </div>  
+          <form id="taskForm" class="mb-5">
+            <h1 id="greeting" class="mb-5 display-2">Hello</h1>
+            <h2 class="mb-3">New Task</h2>
+            <input id="taskName" type="text" class="mb-2 form-control shadow-sm" placeholder="Task Name" />
+            <textarea id="taskDescription" class="form-control mb-2 shadow-sm" placeholder="Task Description" rows="7"></textarea>
+            <input id="dueDate" type="date" class="mb-3 form-control shadow-sm" placeholder="Due Date" />
+            <button type="submit" class="btn btn-dark shadow-sm px-5">Create task</button>
+          </form>
+  
+          <div class="d-flex align-items-center gap-3 mb-5">
+            <label for="sortSelect">Sort by</label>
+            <select id="sortSelect" class="form-select w-auto shadow-none">
+              <option value="default" selected>Default</option>
+              <option value="dueDate">Due Date</option>
+              <option value="dateCreated">Date Created</option>
+            </select>
+          </div>
+  
+          <!-- TASK LIST SECTION -->
+          <div class="row min-vh-50">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0 d-flex flex-column" style="min-height: 300px;">
+              <h2>To Do</h2>
+              <ul id="toDoList" class="list-group mt-auto mb-0">
+                <!-- Tasks will appear here -->
+              </ul>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column" style="min-height: 300px;">
+              <h2>Completed</h2>
+              <ul id="completedList" class="list-group mt-auto mb-0">
+                <!-- Completed tasks will appear here -->
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</main>
+  </main>
+  
 
 <!-- Dashboard Above - Create a task -->
 

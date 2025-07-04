@@ -16,6 +16,12 @@ nav, footer {
     color: var(--primaryHover);
 }
 
+nav.navbar {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
 .bg-img {
     min-height: 90vh;
     height: auto;
